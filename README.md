@@ -25,3 +25,6 @@ Useful links:
 
 [Docker manual](https://towardsdatascience.com/learn-enough-docker-to-be-useful-b0b44222eef5);
 
+[A really useful video](https://www.youtube.com/watch?v=QF4ZF857m44);
+
+Many useful instructions you can see in the [docker-commands](https://github.com/kostya2709/Kernel/blob/master/docker/docker-commands) file in this repository;

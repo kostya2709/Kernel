@@ -1,0 +1,71 @@
+docker images                       - view local images
+
+docker ps                           - view containers
+docker ps -a                        - view all the containers
+docker ps -a -q                     - view all the containers, but show only ID
+
+docker build -t hello-world .       - build an image 
+
+docker run *image name*                 - make a container from an image *image name*
+    --name *a name*                     - make a container from an image *image name* with name *a name*
+    -d                                  - work in background
+    -rm                                 - run and remove the container
+    -e *variable*=*value*               - create a variable with the value
+    -v *home address*:*ad. in a cont.*  -mount a folder to the container
+    -v *volume name*:*ad. in a cont.*   -mount a folder to the container from a volume
+
+docker rm *ID*                          - delete a container with this ID
+docker rm *name*                        - delete a container with this name
+docker rm $(docker ps -qa)              - delete all the containers
+docker rmi *image ID*                   - delete an image with this ID
+
+docker stop *container name*            - stop container
+
+docker volume create *volume name*      - create a volume 
+docker volume ls                        - view all the volumes
+
+docker login                            - login in Docker hub
+docker push *image name*                - push to Docker hub
+
+In Docker:
+
+FROM                                - the base
+RUN *command*                       - execute a command
+WORKDIR *directory*                 - choose a working directory
+COPY *address_from* *address_to*    - copy files
+CMD [*command1*, *command2*, ...]   - execute commands when it starts working
+ENV *variable* *value*              - create an enviromental variable with the value
+
+In docker-compose:
+
+version: "*number*"                 - set a version
+volumes:                            - set volumes
+    *volume name1*:                 - with these names
+    ...
+
+services:                           - set group of settings
+    *first service name*:
+        build: *Dockerfile addres*  - set the address for Dockerfile
+        restart: always             - restart after every start of VM
+        environement:
+            -*var. name*=*value*    - set the enviromental variables
+        image: *image name*         - set this image
+
+docker-compose up -d                - run it
+docker-compose down                 - stop everything
+
+
+POSSIBLE ERROR:
+Got permission denied while trying to connect to the Docker daemon socket
+SOLUTION:
+sudo chmod 666 /var/run/docker.sock
+
+
+N.B.!
+    1) It is good to make a file "requirements.txt" and write something like
+flask==1.1.1
+
+Then in comand line:
+$ pip install -r requirements.txt
+This installs all the necessary requirements.
+This command can be added into "RUN"

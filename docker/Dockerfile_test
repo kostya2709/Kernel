@@ -1,0 +1,10 @@
+FROM python:3.6
+
+RUN mkdir -p /usr/src/docker_app
+WORKDIR /usr/src/docker_app/
+
+ENV TZ Europe/Moscow
+
+COPY . /usr/src/docker_app
+
+CMD ["python", "hello_world.py"]

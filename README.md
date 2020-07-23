@@ -28,3 +28,11 @@ Useful links:
 [A really useful video](https://www.youtube.com/watch?v=QF4ZF857m44);
 
 Many useful instructions you can see in the [docker-commands](https://github.com/kostya2709/Kernel/blob/master/docker/docker-commands) file in this repository;
+
+# Signals
+
+Useful links:
+
+[Video manual about basics of signals](https://www.youtube.com/watch?v=83M5-NPDeWs);
+
+[Signal handling more thoroughly](https://www.ibm.com/developerworks/ru/library/l-signals_1/index.html);

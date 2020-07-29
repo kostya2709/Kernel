@@ -36,3 +36,11 @@ Useful links:
 [Video manual about basics of signals](https://www.youtube.com/watch?v=83M5-NPDeWs);
 
 [Signal handling more thoroughly](https://www.ibm.com/developerworks/ru/library/l-signals_1/index.html);
+
+# GDB
+
+Useful links:
+
+[A good video manual](https://www.youtube.com/watch?v=o5Em514nOtY&t=338s);
+
+[The main gdb commands](https://github.com/kostya2709/Kernel/blob/master/gdb_tests/compilation_keys);

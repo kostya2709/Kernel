@@ -1,0 +1,48 @@
+
+-g                              Compile for debug
+
+gdb ./*file_name*               Start debugging
+gdb -p *pid*                    Start debugging a running process, the process stops
+detach                          Detach from a process
+
+COMMANDS IN gdb
+list                            View the code
+list *first line*, *last*       View some lines
+
+
+q(uit)                          Quit debugging
+Enter                           Use the previous command
+help *command name*             Write some help
+print *expression*              Compile a C-expression
+
+b(reak) *line number*           Set a break point
+b *function name*               Set a break point at this function
+b *file name*:*line number*     Set a break in this file
+
+d(elete) *break point number*   Delete a break point from this line
+
+r(un)                           Run the program
+next                            Go to the next line (doesn't enter a function)
+step                            Go to the next line (enters a function)
+finish                          Leave this function
+set var *var_name*=*value*      Set the value of an existing variable
+x/4xb &i                        Print memory info at this address
+ptype *expression*              Prints type of an expression
+c(ontinue)                      Continue the running program to the end or to a breakpoint
+
+watch *var name*                Watch a variable
+info b                          View breakpoints
+
+disassemble                     Disassemble the hole code
+nexti                           To the next mashine instruction (doesn't enter a function)
+stepi                           To the next mashine instruction (enter a function)
+x /d $esp+14                    View the value in there
+x /s *str address*              View a string by its address
+info reg                        View info about registers
+
+ulimit -a                       View some info about some limits
+ulimit -c unlimited             Set core dump size unlimited
+gdb *file name* core            View the core dump of the file
+where                           View info about core
+bt(backtrace)                   View info about core
+frame *a number*                View a frame

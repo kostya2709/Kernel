@@ -44,3 +44,9 @@ Useful links:
 [A good video manual](https://www.youtube.com/watch?v=o5Em514nOtY&t=338s);
 
 [The main gdb commands](https://github.com/kostya2709/Kernel/blob/master/gdb_tests/compilation_keys);
+
+# Threads
+
+Useful links:
+
+[A good video channel with some videos about simple multithreading](https://www.youtube.com/channel/UCtLKO1Cb2GVNrbU7Fi0pM0w/playlists);
